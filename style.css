@@ -1,0 +1,22 @@
+body {
+    background-color: #d6ab00;
+    background-image: url("tweed.png")
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+input {
+    opacity: 0.5;
+    width: 75%;
+    border-radius: 15px;
+    border: 1px rgb(170, 163, 99) solid;
+    padding: 5px 5px 5px 25px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
