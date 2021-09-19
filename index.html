@@ -1,23 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Tale of Brew Cities</title>
+    <!-- <!-- <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Prompt:400,800' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-    <div>
-    <div class="container">
-    <div id='backgorund'>
+    <!-- first we want to make a responsive navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">Home</a>
+        <!-- the collapse button for hamburger menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- collapsible content -->
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Favorites</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 search_bar" type="search" placeholder="Search Your City...">
+                <button type="button" class="btn">
+                    <i class="fas fa-search">search</i>
+                </button>
+            </form>
         </div>
-    <h1>The Tale of Brew Cities</h1>
-    <div class="topnav">
-        <input type="text" placeholder="Find Your Brewery..">
-      </div>
+    </nav>
+    <!-- creating divs that will sit on top of the liquid -->
+    <div id="container">
+        <div id="top">
+            <div class="beer-foam">
+                <!-- this is where we'll put the white 'foam' circles -->
+                <div class="foam-1"></div>
+                <div class="foam-2"></div>
+                <div class="foam-3"></div>
+                <div class="foam-4"></div>
+                <div class="foam-5"></div>
+                <div class="foam-6"></div>
+                <div class="foam-7"></div>
+                <div class="foam-8"></div>
+                <div class="foam-9"></div>
+                <div class="foam-10"></div>
+                <div class="foam-11"></div>
+                <div class="foam-12"></div>
+                <div class="foam-13"></div>
+                <div class="foam-14"></div>
+                <div class="foam-15"></div>
+                <div class="foam-16"></div>
+                <div class="foam-17"></div>
+                <div class="foam-18"></div>
+                <div class="foam-19"></div>
+                <div class="foam-20"></div>
+                <div class="foam-21"></div>
+                <div class="foam-22"></div>
+                <div class="foam-23"></div>
+                <div class="foam-24"></div>
+                <div class="foam-25"></div>
+                <div class="foam-26"></div>
+                <div class="foam-27"></div>
+                <div class="foam-28"></div>
+                <div class="foam-29"></div>
+                <div class="foam-30"></div>
+                <div class="foam-31"></div>
+                <div class="foam-32"></div>
+                <div class="foam-33"></div>
+                <div class="foam-34"></div>
+                <div class="foam-35"></div>
+                <div class="foam-36"></div>
+                <div class="foam-37"></div>
+                <div class="foam-38"></div>
+                <div class="foam-39"></div>
+                <div class="foam-40"></div>
+                <div class="foam-41"></div>
+                <div class="foam-42"></div>
+                <div class="foam-43"></div>
+                <div class="foam-44"></div>
+                <div class="foam-45"></div>
+                <div class="foam-46"></div>
+                <div class="foam-47"></div>
+                <div class="foam-48"></div>
+                <div class="foam-49"></div>
+                <div class="foam-50"></div>
+                <div class="foam-51"></div>
+                <div class="foam-52"></div>
+                <div class="foam-53"></div>
+                <div class="foam-54"></div>
+                <div class="foam-55"></div>
+                <div class="foam-56"></div>
+                <div class="foam-57"></div>
+                <div class="foam-58"></div>
+                <div class="foam-59"></div>
+                <div class="foam-60"></div>
+                <div class="foam-61"></div>
+                <div class="foam-62"></div>
+                <div class="foam-63"></div>
+                <div class="foam-64"></div>
+                <div class="foam-65"></div>
+                <div class="foam-66"></div>
+                <div class="foam-67"></div>
+                <div class="foam-68"></div>
+                <div class="foam-69"></div>
+                <div class="foam-70"></div>
+                <div class="foam-71"></div>
+                <div class="foam-72"></div>
+                <div class="foam-73"></div>
+                <div class="foam-74"></div>
+                <div class="foam-75"></div>
+                <div class="foam-76"></div>
+                <div class="foam-77"></div>
+            </div>
+            <!-- now we want to make some bubbles -->
+            <!-- this is also where we'll style our 'beer' -->
+            <div id="liquid">
+                <div class="bubble bubble1"></div>
+                <div class="bubble bubble2"></div>
+                <div class="bubble bubble3"></div>
+                <div class="bubble bubble4"></div>
+                <div class="bubble bubble5"></div>
+            </div>
+        </div>
+        <h1>The Tale of Brew Cities</h1>
+
+    </div>
+
+
+
     </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    
 </body>
+
 </html>
