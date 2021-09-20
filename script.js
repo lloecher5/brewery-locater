@@ -65,6 +65,7 @@ function initMap() {
         //for each brewery, creates a marker on the map.
 
         breweries.forEach((brewery) => {
+          console.log(brewery);
           if (brewery.latitude !== null && brewery.longitude !== null) {
             addMarker(
               brewery.name,

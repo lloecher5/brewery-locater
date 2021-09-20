@@ -9,6 +9,9 @@ h1 {
   /* font-size: 50px; */
   padding-top: 90px;
 }
+body {
+  background-color: red;
+}
 
 /* fills left margin automatically allowing responsive behavior for search bar */
 
@@ -538,8 +541,6 @@ form {
   width: 100%;
   display: none;
 }
-
-/*gives the title a cursvie font*/
 
 .favorite-list {
   display: none;
