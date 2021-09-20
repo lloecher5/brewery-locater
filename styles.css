@@ -8,7 +8,34 @@ form {
 }
 
 .map {
+  margin: auto;
   height: 100vh;
   width: 100%;
   display: none;
+}
+
+.favorites-list {
+  display: block;
+  margin: auto;
+}
+
+/*gives the title a cursvie font*/
+
+h1 {
+  font-family: Brush Script MT;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.remove {
+  margin-left: 10px;
+  height: 20px;
+}
+
+.favorite-list {
+  display: none;
+  margin: auto;
 }
