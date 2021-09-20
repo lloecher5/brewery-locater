@@ -38,8 +38,8 @@ function initMap() {
         //changes the display of the map from none to block. Map is originally set to display of none
         mapDisplay.style.display = "block";
         //stores the array of data to a variable
+
         const breweries = data;
-        console.log(breweries);
 
         //creates an array of just the coordinates for each brewery
         const coordinates = breweries.map((brewery) => {
@@ -65,7 +65,6 @@ function initMap() {
         //for each brewery, creates a marker on the map.
 
         breweries.forEach((brewery) => {
-          console.log(brewery);
           if (brewery.latitude !== null && brewery.longitude !== null) {
             addMarker(
               brewery.name,
