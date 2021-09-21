@@ -10,15 +10,6 @@ h1 {
   padding-top: 90px;
 }
 
-.subtitle {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-body {
-  background-color: red;
-}
-
 /* fills left margin automatically allowing responsive behavior for search bar */
 
 #container {
@@ -543,7 +534,7 @@ form {
 
 .map {
   margin: auto;
-  height: 75vh;
+  height: 72vh;
   width: 100%;
   display: none;
 }
@@ -551,4 +542,25 @@ form {
 .favorite-list {
   display: none;
   text-align: center;
+}
+
+.subtitle {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  height: 4vh;
+  background-color: #f2c025;
+  text-align: center;
+  overflow: hidden;
+}
+
+main {
+  height: 72vh;
+}
+
+.fav-btn {
+  margin-left: -65px;
 }

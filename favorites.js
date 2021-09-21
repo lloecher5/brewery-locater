@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   //creates an HTML element for each brewery in the local storage
   const favoritesArray = favorites.map((favorite) => {
-    return `<div class="card clear" data-name = "${favorite.name}" style="width: 18rem;">
+    return `<div class="card clear" data-name = "${favorite.name}" style=" background-color: #f2c025; width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">${favorite.name}</h5>
       <h6 class="card-subtitle mb-2 text-muted">${favorite.city}, ${favorite.state}</h6>
       <h6 class="card-subtitle mb-2 text-muted">${favorite.street}</h6>
       <h6 class="card-subtitle mb-2 text-muted">phone: ${favorite.phone}</h6>
-      <a href="${favorite.website_url}" class="card-link">Link to website</a>
-      <button class="remove">Remove </button>
+      <a href="${favorite.website_url}" target="_blank" class="card-link">Link to website</a>
+      <button class="remove btn btn-outline-danger">Remove </button>
       
     </div>
   </div>`;
@@ -49,7 +49,7 @@ document.addEventListener("click", (e) => {
 
     //turn the local storage array back into JSON
     favoriteList = JSON.stringify(favoriteList);
-    //Reset the local storgage to the new JSON object that has removed the desired item
+    //Reset the local storage to the new JSON object that has removed the desired item
     localStorage.setItem("favorites", favoriteList);
     //Remove HTML
     target.remove();
