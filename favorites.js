@@ -8,16 +8,20 @@ document.addEventListener("DOMContentLoaded", (e) => {
   //creates an HTML element for each brewery in the local storage
   const favoritesArray = favorites.map((favorite) => {
     return `<div class="card clear" data-name = "${favorite.name}" style=" background-color: #f2c025; width: 18rem;">
+    
     <div class="card-body">
+    <a style ="text-decoration: none;" href="${favorite.website_url}" target="_blank" class="card-link">
       <h5 class="card-title">${favorite.name}</h5>
+      </a>
       <h6 class="card-subtitle mb-2 text-muted">${favorite.city}, ${favorite.state}</h6>
       <h6 class="card-subtitle mb-2 text-muted">${favorite.street}</h6>
       <h6 class="card-subtitle mb-2 text-muted">phone: ${favorite.phone}</h6>
-      <a href="${favorite.website_url}" target="_blank" class="card-link">Link to website</a>
-      <button class="remove btn btn-outline-danger">Remove </button>
+      
+      <button style ="float:right;"class="remove btn btn-outline-danger">Remove </button>
       
     </div>
-  </div>`;
+  </div>
+  `;
   });
 
   //joins array into a string

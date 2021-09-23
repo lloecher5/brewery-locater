@@ -23,12 +23,16 @@ const addMarker = (name, street, link, coordinates, map) => {
 
 //function from google maps API
 function initMap() {
+  //adds autocomplete functionality to the search bar
+  const autocomplete = new google.maps.places.Autocomplete(input);
   //add event listener to the form that triggers when submit button is clicked
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    //store the input value into a variable
-    const city = input.value;
+    //store the input value into a variable. Output returns city, state, country. we only need the city. therefore, you can split the string into an array and only save the fist index which is always the city
+
+    const city = input.value.split(",")[0];
+    console.log(city);
     //fetches data with the city typed into input bar
     fetch(`https://api.openbrewerydb.org/breweries?by_city=${city}`)
       .then((response) => {
@@ -40,19 +44,26 @@ function initMap() {
         //stores the array of data to a variable
 
         const breweries = data;
+        console.log(breweries);
 
-        //creates an array of just the coordinates for each brewery
+        //creates an array of just the coordinates for each brewery. This filters out all the breweries that have null coordinates
         const coordinates = breweries.map((brewery) => {
           return [brewery.latitude, brewery.longitude];
         });
 
+        //need to get a non null coordinate to set the initial map
+        const validCoords = coordinates.filter((coord) => {
+          return coord[0] !== null;
+        });
+
         //sets what the initial map looks like
+
         const options = {
           zoom: 12,
           center: {
             //picked coordinates from one of the breweries to focus the map. Need to think of a better way to do this.
-            lat: Number(coordinates[3][0]),
-            lng: Number(coordinates[3][1]),
+            lat: Number(validCoords[3][0]),
+            lng: Number(validCoords[3][1]),
           },
         };
 
