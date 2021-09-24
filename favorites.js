@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   const favoritesArray = favorites.map((favorite) => {
     return `<div class="card clear" data-name = "${favorite.name}" style=" background-color: #f2c025; width: 18rem;">
     
-    <div class="card-body">
+    <div class="card-body d-flex flex-column ">
     <a style ="text-decoration: none;" href="${favorite.website_url}" target="_blank" class="card-link">
       <h5 class="card-title">${favorite.name}</h5>
       </a>
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       <h6 class="card-subtitle mb-2 text-muted">${favorite.street}</h6>
       <h6 class="card-subtitle mb-2 text-muted">phone: ${favorite.phone}</h6>
       
-      <button style ="float:right;"class="remove btn btn-outline-danger">Remove </button>
+      <button class="remove btn btn-outline-danger  mt-auto ">Remove </button>
       
     </div>
   </div>

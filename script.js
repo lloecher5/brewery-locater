@@ -2,6 +2,7 @@ const form = document.querySelector("form");
 const input = document.querySelector(".form-control");
 const mapDisplay = document.querySelector(".map");
 const favoritesLink = document.querySelector(".favorite-list");
+const chart = document.querySelector(".chart");
 
 const addMarker = (name, street, link, coordinates, map) => {
   const marker = new google.maps.Marker({
@@ -40,6 +41,7 @@ function initMap() {
       })
       .then((data) => {
         //changes the display of the map from none to block. Map is originally set to display of none
+        chart.style.display = "none";
         mapDisplay.style.display = "block";
         //stores the array of data to a variable
 
