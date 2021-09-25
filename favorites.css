@@ -8,14 +8,9 @@
 h1 {
   text-align: center;
 }
-
 .link {
   text-align: center;
-  margin-top: 10px;
-}
-
-#link {
-  color: red;
+  margin-top: 20px;
 }
 
 .remove {

@@ -1,9 +1,20 @@
+//select elements in the DOM
 const form = document.querySelector("form");
 const input = document.querySelector(".form-control");
 const mapDisplay = document.querySelector(".map");
 const favoritesLink = document.querySelector(".favorite-list");
 const chart = document.querySelector(".chart");
+const total = document.getElementById("total");
 
+//use to add the number of favorites currently stored on the button
+let favoriteCount = JSON.parse(localStorage.getItem("favorites"));
+
+if (!favoriteCount) {
+  favoriteCount = 0;
+} else {
+  favoriteCount = favoriteCount.length;
+}
+//funcion that adds beer emoji markers to the map and the info window
 const addMarker = (name, street, link, coordinates, map) => {
   const marker = new google.maps.Marker({
     position: coordinates,
@@ -14,7 +25,8 @@ const addMarker = (name, street, link, coordinates, map) => {
     content: `<h6>${name} </h6>
                <p>${street}</p>
                <a href = "${link}" target ="_blank"> Link to website</a>
-               <button style =" border-radius: 10%; display: block; margin-top: 10px; color: white; background-color: blue;" class="save" data-name ="${name}">Add to favorites</button>`,
+               <button style =" border-radius: 10%; display: block; margin-top: 10px; color: white; background-color: blue;" class="save" data-name ="${name}">Add to favorites</button>
+               `,
   });
   //adds event listener to each marker, that opens it up when clicked
   marker.addListener("click", () => {
@@ -124,8 +136,11 @@ function initMap() {
             const breweryName = e.target.dataset.name;
             alert(`${breweryName} has been added to your favorites`);
             saveToFavorites(breweryName);
+
             //display anchor tag for favorites list
+            favoriteCount++;
             favoritesLink.style.display = "block";
+            total.innerText = `(${favoriteCount})`;
           }
         });
       });
