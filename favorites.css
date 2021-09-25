@@ -22,3 +22,10 @@
     margin-left: 60px;
     border-radius: 10%;
   }
+
+  .day {
+      background: url('https://images.unsplash.com/photo-1555658636-6e4a36218be7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80') 50% 0 no-repeat fixed;; 
+  }
+    .night { 
+      background-image: url("https://www.redh.co.uk/media/ale_vs_beer.png");
+}

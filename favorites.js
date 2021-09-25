@@ -59,3 +59,13 @@ document.addEventListener("click", (e) => {
     target.remove();
   }
 });
+
+
+jQuery(document).ready(function($){
+    let thehours = new Date().getHours();
+        if (thehours >= 0 && thehours < 12) {
+        $("#main").addClass("day");
+        } else if (thehours >= 17 && thehours < 24) {
+        $("#main").addClass("night");
+        }
+    });
