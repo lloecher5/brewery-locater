@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         console.log(favorites)
     //creates an HTML element for each brewery in the local storage
     const favoritesArray = favorites.map((favorite) => {
-        return `<div class="card clear" data-name = "${favorite.name}" style=" background-color: #f2c025; width: 18rem;">
+        return `<div class="card clear" data-name = "${favorite.name}" style=" background-color: #f2c025; width: 18rem; box-shadow: 3px 3px 3px;">
         <img class="card-img-top" src="https://images.unsplash.com/photo-1555658636-6e4a36218be7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="Card image cap">
     <div class="card-body d-flex flex-column ">
     <a style ="text-decoration: none;" href="${favorite.website_url}" target="_blank" class="card-link">

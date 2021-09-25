@@ -137,7 +137,7 @@ function initMap() {
       });
   });
 }
-    // initialize jQuery document ready
+        // initialize jQuery document ready
     jQuery(document).ready(function ($) {
         // once the document is ready in the DOM this function will run
         let thehours = new Date().getHours();
@@ -145,7 +145,7 @@ function initMap() {
         if (thehours >= 0 && thehours < 17) {
         // jQuery captures the "main" id and add's a class that we will manipulate in css
             $("#main").addClass("day");
-            // repeate the process if its later in the day
+        // repeate the process if its later in the day
         } else if (thehours >= 17 && thehours < 24) {
             $("#main").addClass("night");
         }
