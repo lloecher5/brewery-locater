@@ -575,3 +575,7 @@ main {
 table {
   margin: auto;
 }
+
+#message {
+  color: green;
+}

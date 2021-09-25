@@ -6,6 +6,7 @@ const favoritesLink = document.querySelector(".favorite-list");
 const chart = document.querySelector(".chart");
 const total = document.getElementById("total");
 const cities = document.querySelectorAll("#city-list");
+const message = document.getElementById("message");
 
 //use to add the number of favorites currently stored on the button
 let favoriteCount = JSON.parse(localStorage.getItem("favorites"));
@@ -143,8 +144,21 @@ function initMap() {
         document.addEventListener("click", (e) => {
           if (e.target.classList.contains("save")) {
             const breweryName = e.target.dataset.name;
-            alert(`${breweryName} has been added to your favorites`);
+
             saveToFavorites(breweryName);
+
+            //adds message to user saying that the brewery was added for 2 seconds.
+            const renderAlert = () => {
+              message.innerText = `${breweryName} has been added to your favorites!`;
+            };
+
+            renderAlert();
+
+            const removeAlert = () => {
+              message.innerText = "";
+            };
+
+            setTimeout(removeAlert, 2000);
 
             //adds 1 to the favorite counter when a new favorite is added
 
@@ -256,8 +270,21 @@ function initMap() {
           document.addEventListener("click", (e) => {
             if (e.target.classList.contains("save")) {
               const breweryName = e.target.dataset.name;
-              alert(`${breweryName} has been added to your favorites`);
+
               saveToFavorites(breweryName);
+
+              //adds message to user saying that the brewery was added for 2 seconds.
+              const renderAlert = () => {
+                message.innerText = `${breweryName} has been added to your favorites!`;
+              };
+
+              renderAlert();
+
+              const removeAlert = () => {
+                message.innerText = "";
+              };
+
+              setTimeout(removeAlert, 2000);
 
               //adds 1 to the favorite counter when a new favorite is added
 
