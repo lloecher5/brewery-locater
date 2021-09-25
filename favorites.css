@@ -8,11 +8,13 @@
   h1 {
     text-align: center;
     color: white;
+
   }
   
   .link {
     text-align: center;
     margin-top: 10px;
+    color: white;
   }
   
   #link {
@@ -34,3 +36,18 @@
     background-attachment: fixed;
     background-size: cover;
     }
+
+    footer {
+        height: 4vh;
+        background-color: #f2c025;
+        text-align: center;
+        overflow: hidden;
+        margin-top: 100%;
+      }
+
+      h1 {
+        color: White;
+        position: relative;
+        font-family: "Brush Script MT";
+        padding-top: 90px;
+      }
