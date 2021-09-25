@@ -1,0 +1,24 @@
+.favorites {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .link {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #link {
+    color: red;
+  }
+  
+  .remove {
+    margin-left: 60px;
+    border-radius: 10%;
+  }
