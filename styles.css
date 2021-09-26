@@ -572,4 +572,6 @@ main {
   margin-left: -65px;
 }
 
-
+table {
+  margin: auto;
+}
