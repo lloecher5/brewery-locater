@@ -127,134 +127,127 @@
         ><button class="fav-btn btn btn-outline-success my-2">
           Click here to see your favorites <span id="total"></span></button
       ></a>
+      <p id="message"></p>
     </div>
 
     <main>
       <div class="map"></div>
       <div class="chart">
+        <h4>Cities with the Most Breweries</h4>
         <table>
-          <tr>
-            <th>City</th>
-            <th>Breweries per 50,000 people</th>
-          </tr>
-          <tr>
-            <td id="city-list">Portland, Maine</td>
-            <td>18</td>
-          </tr>
-          <tr>
-            <td id="city-list">Asheville, North Carolina</td>
-            <td>17</td>
-          </tr>
-          <tr>
-            <td id="city-list">Bend, Oregon</td>
-            <td>16</td>
-          </tr>
-          <tr>
-            <td id="city-list">Boulder, Colorado</td>
-            <td>14</td>
-          </tr>
-          <tr>
-            <td id="city-list">Kalamazoo, Michigan</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td id="city-list">Vista, California</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td id="city-list">Greenville, South Carolina</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td id="city-list">Portland, Oregon</td>
-            <td>9</td>
-          </tr>
+          <thead>
+            <tr>
+              <th id="title">City</th>
+              <th id="title">Breweries per 50,000 people</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="city-list">Portland, Maine</td>
+              <td id="count">18</td>
+            </tr>
+            <tr>
+              <td id="city-list">Asheville, North Carolina</td>
+              <td id="count">17</td>
+            </tr>
+            <tr>
+              <td id="city-list">Bend, Oregon</td>
+              <td id="count">16</td>
+            </tr>
+            <tr>
+              <td id="city-list">Boulder, Colorado</td>
+              <td id="count">14</td>
+            </tr>
+            <tr>
+              <td id="city-list">Kalamazoo, Michigan</td>
+              <td id="count">10</td>
+            </tr>
+            <tr>
+              <td id="city-list">Vista, California</td>
+              <td id="count">10</td>
+            </tr>
+            <tr>
+              <td id="city-list">Greenville, South Carolina</td>
+              <td id="count">10</td>
+            </tr>
+            <tr>
+              <td id="city-list">Portland, Oregon</td>
+              <td id="count">9</td>
+            </tr>
 
-          <tr>
-            <td id="city-list">Pensacola, Florida</td>
-            <td>9</td>
-          </tr>
-          <tr>
-            <td id="city-list">Missoula, Montana</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td id="city-list">Fort Collins, Colorado</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td id="city-list">Loveland, Colorado</td>
-            <td>7</td>
-          </tr>
-          <tr>
-            <td id="city-list">Grand Rapids, Michigan</td>
-            <td>7</td>
-          </tr>
-          <tr>
-            <td id="city-list">Santa Cruz, California</td>
-            <td>7</td>
-          </tr>
-          <tr>
-            <td id="city-list">Royal Oak, Michigan</td>
-            <td>7</td>
-          </tr>
-          <tr>
-            <td id="city-list">Charleston, South Carolina</td>
-            <td>7</td>
-          </tr>
-          <tr>
-            <td id="city-list">Bellingham, Washington</td>
-            <td>7</td>
-          </tr>
-          <tr>
-            <td id="city-list">Denver, Colorado</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td id="city-list">Longmont, Colorado</td>
-            <td>6</td>
-          </tr>
+            <tr>
+              <td id="city-list">Pensacola, Florida</td>
+              <td id="count">9</td>
+            </tr>
+            <tr>
+              <td id="city-list">Missoula, Montana</td>
+              <td id="count">8</td>
+            </tr>
+            <tr>
+              <td id="city-list">Fort Collins, Colorado</td>
+              <td id="count">8</td>
+            </tr>
+            <tr>
+              <td id="city-list">Loveland, Colorado</td>
+              <td id="count">7</td>
+            </tr>
+            <tr>
+              <td id="city-list">Grand Rapids, Michigan</td>
+              <td id="count">7</td>
+            </tr>
+            <tr>
+              <td id="city-list">Santa Cruz, California</td>
+              <td id="count">7</td>
+            </tr>
+            <tr>
+              <td id="city-list">Royal Oak, Michigan</td>
+              <td id="count">7</td>
+            </tr>
+            <tr>
+              <td id="city-list">Charleston, South Carolina</td>
+              <td id="count">7</td>
+            </tr>
+            <tr>
+              <td id="city-list">Bellingham, Washington</td>
+              <td id="count">7</td>
+            </tr>
+            <tr>
+              <td id="city-list">Denver, Colorado</td>
+              <td id="count">6</td>
+            </tr>
+            <tr>
+              <td id="city-list">Longmont, Colorado</td>
+              <td id="count">6</td>
+            </tr>
 
-          <tr>
-            <td id="city-list">Rochester, New York</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td id="city-list">Cincinnati, Ohio</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td id="city-list">Yakima, Washington</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td id="city-list">Lancaster, Pennsylvania</td>
-            <td>6</td>
-          </tr>
+            <tr>
+              <td id="city-list">Rochester, New York</td>
+              <td id="count">6</td>
+            </tr>
+            <tr>
+              <td id="city-list">Cincinnati, Ohio</td>
+              <td id="count">6</td>
+            </tr>
+            <tr>
+              <td id="city-list">Yakima, Washington</td>
+              <td id="count">6</td>
+            </tr>
+            <tr>
+              <td id="city-list">Lancaster, Pennsylvania</td>
+              <td id="count">6</td>
+            </tr>
+          </tbody>
         </table>
-
-        <!-- <div class="chart">
-          <img id="chart" src="images/brewery-chart.jpg" />
-        </div> -->
       </div>
     </main>
     <footer>
       <p>Built in 2021</p>
     </footer>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-  crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9w_uXeIWzxOr6MDDyX88H-bU33yFq3RI&libraries=places&callback=initMap"></script>
-</body>
-
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9w_uXeIWzxOr6MDDyX88H-bU33yFq3RI&libraries=places&callback=initMap"
+    ></script>
+  </body>
 </html>
