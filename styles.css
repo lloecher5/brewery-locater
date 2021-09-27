@@ -553,7 +553,8 @@ form {
 .chart {
   text-align: center;
   height: 72vh;
-  overflow: hidden;
+  overflow-y: scroll;
+
   margin-top: 10px;
 }
 
@@ -561,7 +562,6 @@ footer {
   height: 4vh;
   background-color: #f2c025;
   text-align: center;
-  overflow: hidden;
 }
 
 main {
